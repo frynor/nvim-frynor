@@ -5,6 +5,3 @@ local lazy = require("lazy")
 local opts = {}
 
 lazy.setup("plugins")
-
-
-
