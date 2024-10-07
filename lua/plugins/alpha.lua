@@ -8,7 +8,9 @@ return  {
       -- if provider not loaded and enabled is true, it will try to use another provider
       startify.file_icons.provider = "devicons"
       require("alpha").setup(
-        startify.config
+        startify.config,
+	vim.api.nvim_set_keymap('n', '<Leader>h', ':Alpha<CR>', { noremap = true, silent = true })
+
       )
     end,
   }
