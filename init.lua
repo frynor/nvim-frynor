@@ -5,3 +5,7 @@ local lazy = require("lazy")
 local opts = {}
 
 lazy.setup("plugins")
+
+vim.wo.number = true
+vim.wo.relativenumber = true
+
