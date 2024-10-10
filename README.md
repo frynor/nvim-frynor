@@ -1,4 +1,4 @@
-#Neovim Configuration
+# Neovim Configuration
 
 **This is my own nvim config**
 
