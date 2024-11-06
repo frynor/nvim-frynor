@@ -19,5 +19,10 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.cindent = true
         vim.opt_local.cinoptions = ':0,l1,t0,g0,(0'
         vim.opt_local.indentexpr = ''
-    end,
+     end,
 })
+
+vim.g.neovide_cursor_vfx_mode = "railgun"
+vim.g.neovide_cursor_vfx_color = "#FFFFFF"  -- Set cursor color
+vim.opt.guicursor = "n:block-blinkon500,v:-blinkon500"
+
