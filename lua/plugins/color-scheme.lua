@@ -1,4 +1,4 @@
---[[ return {
+ return {
 	"rose-pine/neovim",
 	name = "rose-pine",
 
@@ -18,7 +18,7 @@
 
 		vim.cmd("colorscheme rose-pine")
 	end,
-} --]]
+} 
 
 
 
@@ -32,7 +32,7 @@
 	end,
 } --]]
 
-return {
+--[[ return {
 	'rebelot/kanagawa.nvim',
 	config = function()
 		vim.opt.background = "dark"
@@ -57,4 +57,4 @@ return {
 		})
 		vim.cmd("colorscheme kanagawa")
 	end,
-} 
+} --]]

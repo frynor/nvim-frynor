@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 vim.opt.rtp:prepend("~/.local/share/nvim/site/pack/packer/start/lazy.nvim")
 local lazy = require("lazy")
 local opts = {}
@@ -25,4 +26,5 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.g.neovide_cursor_vfx_mode = "railgun"
 vim.g.neovide_cursor_vfx_color = "#FFFFFF"  -- Set cursor color
 vim.opt.guicursor = "n:block-blinkon500,v:-blinkon500"
+vim.cmd('colorscheme rose-pine')
 
