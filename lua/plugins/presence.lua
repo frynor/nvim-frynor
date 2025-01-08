@@ -21,5 +21,5 @@ return {
             line_number_text = "Line %s out of %s",
         })
     end,
-}
+} 
 
