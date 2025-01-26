@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", },
+				ensure_installed = { "lua_ls", "clangd"},
 				on_attach = function(client, bufnr)
 					client.server_capabilities.documentFormattingProvider = false
 				end
