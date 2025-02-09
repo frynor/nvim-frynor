@@ -42,7 +42,7 @@ return {
                     dark = "dragon",
                     light = "lotus",
                 },
-                terminalColors = true,
+                terminalColors = false,
                 overrides = function(colors)
                     local theme = colors.theme
                     return {
@@ -88,7 +88,7 @@ return {
 					shade = "dark",
 					percentage = 0.15,
 				},
-                custom_highlights = function(colors)
+                --[[ custom_highlights = function(colors)
                     return {
                         Normal = { bg = "#000000" },
 			NormalNC = { bg = "#000000" },
@@ -104,8 +104,8 @@ return {
 			TelescopeBorder = { bg = "#000000" },
 			NvimTreeNormal = { bg = "#000000" },
 			NvimTreeNormalNC = { bg = "#000000" },
-                    }
-                end,
+                    } 
+                end, --]]
                 integrations = {
                     cmp = true,
                     gitsigns = true,
@@ -115,4 +115,16 @@ return {
             })
         end,
     },
+
+	{
+		"folke/tokyonight.nvim",
+		name = "tokyonight",
+		priority = 1000,
+		config = function()
+			require("tokyonight").setup({
+				style = "night"
+			})
+		end,
+	}
 }
+
