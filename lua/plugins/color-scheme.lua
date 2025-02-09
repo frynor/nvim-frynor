@@ -79,19 +79,38 @@ return {
         config = function()
             require("catppuccin").setup({
                 flavour = "mocha",
+		background = {
+					dark = "mocha",
+				},
+
+		dim_inactive = {
+					enabled = false,
+					shade = "dark",
+					percentage = 0.15,
+				},
                 custom_highlights = function(colors)
                     return {
                         Normal = { bg = "#000000" },
+			NormalNC = { bg = "#000000" },
                         NormalFloat = { bg = "#000000" },
+			NormalBorder = { bg = "#000000" },
+			FloatBorder = { bg = "#000000" },
                         LineNr = { bg = "#000000" },
                         SignColumn = { bg = "#000000" },
+			WinSeperator = { bg = "#000000", fg = "#000000" },
+
+			-- Plugin specific colors
+		        TelescopeNormal = { bg = "#000000" },
+			TelescopeBorder = { bg = "#000000" },
+			NvimTreeNormal = { bg = "#000000" },
+			NvimTreeNormalNC = { bg = "#000000" },
                     }
                 end,
                 integrations = {
-                    nvimtree = true,
-                    telescope = true,
                     cmp = true,
                     gitsigns = true,
+		    telescope = { enabled = true, style = "mocha" },
+		    nvimtree = { enabled = true, transparent_panel = false },
                 },
             })
         end,
